@@ -1,4 +1,4 @@
-public class basic {
+public class Basic {
 
     // main function is a entry point
     // void main(){ // can be written like this but public static void main is a classical way
