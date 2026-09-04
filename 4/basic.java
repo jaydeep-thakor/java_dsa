@@ -1,13 +1,23 @@
 public class Basic {
 
-    // main function is a entry point
-    // void main(){ // can be written like this but public static void main is a classical way
+    // single line comment
 
-    public static void main(){
+    /*
+     * multi
+     * line
+     * comment
+     */
+
+    // for example
+    // -> main() - a file has 30000 lines code, java will find main method and
+    // starts executiom from there
+    // -> class is a collection of different methods and code
+    // -> void - returns nothing
+
+    public static void main(String[] args) {
         System.out.println("jaydeep");
         System.out.println("hello" + " world");
-        System.out.println(3+4);
+        System.out.println(3 + 4);
     }
 
 }
-

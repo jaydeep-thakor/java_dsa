@@ -9,11 +9,13 @@ public class Variables {
         // 2 - First character can only be letter(a-z, A-Z), _ or $
         //     Cannot start with number
 
-        // 3 - No reserved keywords like class, int, etc
+        // 3 - Subsequent character (0 to 9, _, $)
 
-        // 4 - Length has no limit but meaningful names are needed
+        // 4 - No reserved keywords like class, int, etc
 
-        // 5 - Conventions:
+        // 5 - Length has no limit but meaningful names are needed
+
+        // 6 - Conventions:
         //     camelCase -> helloJaydeep
         //     UPPERCASE for constants -> WEEKDAYS
 

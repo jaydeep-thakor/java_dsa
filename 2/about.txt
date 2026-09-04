@@ -1,0 +1,5 @@
+ * how a java program run
+code -> compiler -> byte code -> jvm -> run on your machine
+
+JDK(complete package)
+JRE is combination of JVM + libraries
