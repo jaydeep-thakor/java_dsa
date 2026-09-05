@@ -9,8 +9,7 @@ public class Basic {
      */
 
     // for example
-    // -> main() - a file has 30000 lines code, java will find main method and
-    // starts executiom from there
+    // -> main() - a file has 30000 lines code, java will find main method and starts executiom from there
     // -> class is a collection of different methods and code
     // -> void - returns nothing
 
