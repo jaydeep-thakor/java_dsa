@@ -1,6 +1,6 @@
 public class Operators {
 
-    public static void main(String a[]) {
+    public static void main(String args[]) {
 
         // 1 - Arithmatic Operators
         // + addition
