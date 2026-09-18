@@ -39,6 +39,14 @@ public class Patterns{
 
         }
 
+        int n4 = 5;
+        for(int row = 1; row<=n4; row++){
+            for(int col = 1; col<=n4-row+1; col++){
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+
     }
 
 }
