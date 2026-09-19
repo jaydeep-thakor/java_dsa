@@ -47,6 +47,17 @@ public class Patterns{
             System.out.println();
         }
 
+        int n5 = 5;
+        for(int row = 1; row<=n5; row++){
+            for(int col = 1; col<=n5-row; col++){
+                System.out.print("  ");
+            }
+            for(int col = 1; col<=2*row-1; col++){
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+
     }
 
 }
