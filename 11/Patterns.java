@@ -58,6 +58,17 @@ public class Patterns{
             System.out.println();
         }
 
+        int n6 = 4;
+        for(int row = 1; row<=n6; row++){
+            for(int col = 1; col<=row-1; col++){
+                System.out.print("  ");
+            }
+            for(int col = 1; col<=2*n6-2*row+1; col++){
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+
     }
 
 }
