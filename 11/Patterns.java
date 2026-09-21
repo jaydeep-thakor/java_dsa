@@ -69,6 +69,22 @@ public class Patterns{
             System.out.println();
         }
 
+        int n7 = 4;
+        for(int row = 1; row<=n7; row++){
+            for(int col = 1; col<=6; col++){
+                if(row == 1 || row == n7){
+                    System.out.print("* ");
+                }else{
+                    if(col == 1 || col == 6){
+                        System.out.print("* ");
+                    }else{
+                        System.out.print("  ");
+                    }
+                }
+            }
+            System.out.println(" ");
+        }
+
     }
 
 }
