@@ -84,7 +84,25 @@ public class Patterns{
             }
             System.out.println(" ");
         }
+System.out.println();
+        int n8 = 10;
+        for(int row = 1; row<=n8; row++){
+            if(row == 1 || row == 2 || row == 10){
+                for(int col = 1; col<=row; col++){
+                    System.out.print("* ");
+                }
+            }else{
+                System.out.print("* ");
 
+                for(int col = 1; col<=(row-2); col++){
+                    System.out.print("  ");
+                }
+
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+        
     }
 
 }
