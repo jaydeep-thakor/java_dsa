@@ -102,6 +102,29 @@ System.out.println();
             }
             System.out.println();
         }
+
+        System.out.println();
+
+            int n9 = 5;
+        for(int row = 1; row<=n9; row++){
+            for(int col = 1; col<=n9-row; col++){
+                System.out.print("  ");
+            }
+            if(row == 1 || row == n9){
+                for(int col = 1; col<=2*row-1; col++){
+                    System.out.print("* ");
+                }
+            }else{
+                System.out.print("* ");
+
+                for(int col = 1; col<=2*row-3; col++){
+                    System.out.print("  ");
+                }
+
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
         
     }
 
