@@ -190,6 +190,45 @@ public class Patterns {
             System.out.println();
         }
 
+
+        int n12 = 5;
+        for(int row = 1; row<=n12; row++){
+            for(int col = 1; col<=row; col++){
+                System.out.print(col);
+            }
+            System.out.println();
+        }
+
+        int n13 = 5;
+        for(int row = 1; row<=n13; row++){
+            for(int col = 1; col<=row; col++){
+                System.out.print(col + " ");
+            }
+            System.out.println();
+        }
+
+        int n14 = 5;
+        int count = 1;
+        for(int row = 1; row<=n14; row++){
+            for(int col = 1; col<=row; col++){
+                System.out.print(count +" ");
+                count++;
+            }
+            System.out.println();
+        }
+
+        int n15 = 5;
+        for(int row = 1; row<=n15; row++){
+            for(int col = 1; col<=row; col++){
+                int a = col;
+                int b = ('A' - 1);
+                int ans = a+b;
+                char finalAns = (char)ans;
+                System.out.print(finalAns+" ");
+            }
+            System.out.println();
+        }
+
     }
 
 }
