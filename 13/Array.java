@@ -120,6 +120,7 @@ public class Array {
             for(int col = 0; col<customArr1[row].length; col++){
                 System.out.print(customArr1[row][col] + " ");
             }
+            System.out.println();
         }
 
     }
