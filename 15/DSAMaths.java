@@ -133,6 +133,7 @@ public class DSAMaths {
         boolean isPrime = isPrimeOrNot(num6);
         System.out.println(isPrime);
 
+        
     }
     
 }
