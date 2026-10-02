@@ -1,18 +1,18 @@
 public class DSAMaths {
 
     // Q-1 - print digits of a number
-    static void printDigits(int num){
-        while(num != 0){
-            int digit = num%10;
+    static void printDigits(int num) {
+        while (num != 0) {
+            int digit = num % 10;
             System.out.println(digit);
             num = num / 10;
         }
     }
 
     // Q-2 - count digits of a number
-    static int countDigits(int num){
+    static int countDigits(int num) {
         int count = 0;
-        while(num != 0){
+        while (num != 0) {
             count++;
             num = num / 10;
         }
@@ -20,40 +20,40 @@ public class DSAMaths {
     }
 
     // Q-3-A - sum of all the digits
-    static float sumOfNumber(float[] nums){
+    static float sumOfNumber(float[] nums) {
         float sum = 0;
-        for(float num : nums){
+        for (float num : nums) {
             sum = sum + num;
         }
         return sum;
     }
 
     // float → int — explicit casting
-//     static int sumOfNumber(float[] nums) {
-//     int sum = 0;
+    // static int sumOfNumber(float[] nums) {
+    // int sum = 0;
 
-//     for (float num : nums) {
-//         sum = sum + (int) num;
-//     }
+    // for (float num : nums) {
+    // sum = sum + (int) num;
+    // }
 
-//     return sum;
-// }
+    // return sum;
+    // }
 
-// float → double — widening conversion
-// static double sumOfNumber(float[] nums) {
-//     double sum = 0;
+    // float → double — widening conversion
+    // static double sumOfNumber(float[] nums) {
+    // double sum = 0;
 
-//     for (float num : nums) {
-//         sum = sum + num;
-//     }
+    // for (float num : nums) {
+    // sum = sum + num;
+    // }
 
-//     return sum;
-// }
+    // return sum;
+    // }
 
     // Q-3-B - sum of all the digits
-    static int sumOfNumber(int num){
+    static int sumOfNumber(int num) {
         int sum = 0;
-        while(num != 0){
+        while (num != 0) {
             int digit = num % 10;
             sum = sum + digit;
             num = num / 10;
@@ -62,24 +62,24 @@ public class DSAMaths {
     }
 
     // Q-4 - reverse number
-    static int reverseNum(int num){
+    static int reverseNum(int num) {
         int revNum = 0;
-        while(num != 0){
+        while (num != 0) {
             int digit = num % 10;
             revNum = revNum * 10 + digit;
             num = num / 10;
         }
-        return  revNum;
+        return revNum;
     }
 
     // Q-5 - is palindrome
-    static boolean isPalindrome(int num){
+    static boolean isPalindrome(int num) {
         int originalNum = num;
         int reverseNum = reverseNum(num);
-        if(originalNum == reverseNum){
+        if (originalNum == reverseNum) {
             System.out.println("num is palindrome");
             return true;
-        }else{
+        } else {
             System.out.println("num is not palindrome");
             return false;
         }
@@ -87,19 +87,30 @@ public class DSAMaths {
 
     // Q-6 - prime numner
     /*
-    - should be greater than 1
-    - divisible only by 1 and itself
-    */
-   static boolean isPrimeOrNot(int num){
-    for(int i = 2; i<=num-1; i++){
-        if(num % i == 0){
-            return false;
+     * - should be greater than 1
+     * - divisible only by 1 and itself
+     */
+    static boolean isPrimeOrNot(int num) {
+        for (int i = 2; i <= num - 1; i++) {
+            if (num % i == 0) {
+                return false;
+            }
         }
+        return true;
     }
-    return true;
-   }
 
-    public static void main(String[] a){
+    // Q-7 find GCD
+    static int getGCD(int a, int b) {
+        while (b != 0) {
+            int oldValOfB = b;
+            b = a % b;
+            a = oldValOfB;
+        }
+        int ans = a;
+        return ans;
+    }
+
+    public static void main(String[] a) {
 
         // 1
         int num1 = 7898;
@@ -111,7 +122,7 @@ public class DSAMaths {
         System.out.println(numCount);
 
         // 3-A
-        float[] marks = {88.75f,78.99f,99.67f, 78.98f};
+        float[] marks = { 88.75f, 78.99f, 99.67f, 78.98f };
         float sumOfMarks = sumOfNumber(marks);
         System.out.println(sumOfMarks);
 
@@ -133,7 +144,10 @@ public class DSAMaths {
         boolean isPrime = isPrimeOrNot(num6);
         System.out.println(isPrime);
 
-        
+        int num7A = 18;
+        int num7B = 12;
+        System.out.println(getGCD(num7A, num7B));
+
     }
-    
+
 }
