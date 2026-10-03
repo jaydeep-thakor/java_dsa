@@ -110,6 +110,13 @@ public class DSAMaths {
         return ans;
     }
 
+    static int getLCM(int a, int b){
+        int gcd = getGCD(a, b);
+        int prod = a*b;
+        int lcm = prod/gcd;
+        return lcm;
+    }
+
     public static void main(String[] a) {
 
         // 1
@@ -147,6 +154,8 @@ public class DSAMaths {
         int num7A = 18;
         int num7B = 12;
         System.out.println(getGCD(num7A, num7B));
+
+        System.out.print(getLCM(num7A, num7B));
 
     }
 
