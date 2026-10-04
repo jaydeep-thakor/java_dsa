@@ -110,11 +110,32 @@ public class DSAMaths {
         return ans;
     }
 
-    static int getLCM(int a, int b){
+    // Q-8 find LCM
+    static int getLCM(int a, int b) {
         int gcd = getGCD(a, b);
-        int prod = a*b;
-        int lcm = prod/gcd;
+        int prod = a * b;
+        int lcm = prod / gcd;
         return lcm;
+    }
+
+    // Q-9 find Armstrong number
+    static boolean isArmstrongNum(int num) {
+        int sum = 0;
+        int originalNum = num;
+        while (num != 0) {
+            int digit = num % 10;
+            System.out.println("digit" + digit);
+            sum = sum + (int) Math.pow(digit, 3);
+            // sum = sum + digit*digit*digit;
+            num = num / 10;
+        }
+        if(sum == originalNum){
+            System.out.println("num is Armstrong");
+            return true;
+        }else{
+            System.out.println("num is not Armstrong");
+            return false;
+        }
     }
 
     public static void main(String[] a) {
@@ -155,7 +176,10 @@ public class DSAMaths {
         int num7B = 12;
         System.out.println(getGCD(num7A, num7B));
 
-        System.out.print(getLCM(num7A, num7B));
+        System.out.println(getLCM(num7A, num7B));
+
+        int num9 = 153;
+        System.out.println(isArmstrongNum(num9));
 
     }
 
