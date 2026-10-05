@@ -129,11 +129,28 @@ public class DSAMaths {
             // sum = sum + digit*digit*digit;
             num = num / 10;
         }
-        if(sum == originalNum){
+        if (sum == originalNum) {
             System.out.println("num is Armstrong");
             return true;
-        }else{
+        } else {
             System.out.println("num is not Armstrong");
+            return false;
+        }
+    }
+
+    // Q-10 - find divisors or check perfect number
+    static boolean checkPerfectNumber(int num) {
+        int sum = 1;
+        for (int i = 2; i * i <= num; i++) {
+            if (num % i == 0) {
+                int firstFactor = i;
+                int secondFactor = num / i;
+                sum = sum + firstFactor + secondFactor;
+            }
+        }
+        if (sum == num) {
+            return true;
+        } else {
             return false;
         }
     }
@@ -180,6 +197,9 @@ public class DSAMaths {
 
         int num9 = 153;
         System.out.println(isArmstrongNum(num9));
+
+        int num10 = 6;
+        System.out.println(checkPerfectNumber(num10));
 
     }
 
